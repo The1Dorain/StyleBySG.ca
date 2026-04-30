@@ -1,0 +1,23 @@
+/* An optional way to deal with colour in your stylesheets is to set your theme colours as variables. Here is a chunk of example code from W3Schools, https://www.w3schools.com/css/css3_variables.asp. If you want to use variables in your portfolio, set your variables in this file using :root as a selector, and then call them throughout your CSS styles using the format shown below. */
+
+/* EXAMPLE CODE
+
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+  }
+  
+  body { background-color: var(--blue); }
+  
+  h2 { border-bottom: 2px solid var(--blue); }
+  
+  .inner-wrapper {
+    color: var(--blue);
+    background-color: var(--white);
+  }
+  
+  button {
+    background-color: var(--white);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+  } */

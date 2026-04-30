@@ -1,0 +1,96 @@
+@import url("reset.css");
+@import url("layout.css");
+@import url("variables.css");
+@import url("typography.css");
+/* DO NOT EDIT THESE IMPORTS
+In order to keep our CSS as manageable as possible, we're starting with multiple separate stylesheets. They are all imported into style.css.
+
+    Do not edit reset.css at all.
+    You can minimally edit layout.css to match your specific column/row grid rules. Try to keep all basic structural rules here.
+    Optionally, you can set colour variables in variables.css.
+    Use typography.css stylesheet to set your general text styles.
+    Use style.css for all general UI styles, or anything that you want to overwrite from other stylesheets, because it's loaded last. */
+
+/* Use this stylesheet to add your UI details, and to overwrite layout details for specific instances. */
+
+body {
+	margin: 0;
+	background-color: #2b0011;
+}
+
+.socials {
+	width: 50px;
+	display: inline-block;
+}
+.red-background {
+	background-color: #430000;
+}
+/* ------------------Style the header---------------- */
+header {
+	padding-top: 5px;
+	margin-bottom: -40px;
+}
+.ssg_logo {
+	width: 50px;
+	margin-left: 60px;
+}
+ul {
+	margin-right: 60px;
+}
+
+/* ----------Style the navigation----------- */
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+nav li {
+	display: inline;
+}
+
+nav a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+.socialmedia {
+	width: 150px;
+	display: inline-block;
+}
+.contactlinks {
+	display: block;
+}
+
+/* ------------------Sections and pages------------------ */
+/* Style any specific sections or pages here */
+
+/* //////////////----Responsive layout - Media queries--------//////////// */
+
+/* You can edit the rules inside of these media queries, but you can also edit the breakpoints to work for your own content and design. */
+
+@media (max-width: 600px) {
+	/* anything you only want applied at mobile sizes can go here */
+}
+
+@media (min-width: 555px) {
+	/* anything you want to kick in at small tablet and above can go here */
+	.crown-illustration {
+		width: 200px;
+		max-width: none;
+	}
+}
+
+@media (min-width: 755px) {
+	/* anything you want to kick in at large tablet and above can go here */
+	.crown-illustration {
+		width: 300px;
+		max-width: none;
+	}
+}
+
+@media (min-width: 856px) {
+	/* anything you want to kick in at desktop and above can go here */
+	.crown-illustration {
+		width: 100%;
+	}
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+
+You can duplicate or do a "save as" with this file to start each of your main website pages, and use the example-layouts.html file for code snippets and reference. You can start one project page with this, and then duplicate that page for the rest of your project pages.
+The homepage html file of every website should always be named index.html.
+
+-->
+
+<head>
+    <title>Sarah&#10076;s Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 
+              In order to keep our CSS as manageable as possible, we're starting with multiple separate stylesheets. They are all imported into style.css.
+
+              Do not edit reset.css at all.
+              You can minimally edit layout.css to match your specific column/row grid rules. Try to keep all basic structural rules here.
+              Optionally, you can set colour variables in variables.css.
+              Use typography.css stylesheet to set your general text styles.
+              Use style.css for all general UI styles, or anything that you want to overwrite from other stylesheets, because it's loaded last.
+          -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Spline+Sans:wght@300..700&display=swap"
+        rel="stylesheet">
+    <!-- Place font links here -->
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!-- This is for content that repeats at the beginning of multiple pages. -->
+        <div class="main-header">
+            <a href="index.html"> <img alt="White SSG logo that looks like a crown." src="images/ssglogowhite.svg"
+                    class="ssg_logo">
+            </a>
+            <nav>
+                <ul class="primary-nav flex-parent-header">
+
+                    <li><a href="index.html#portfolio" class="flex-child-header secondary-button">
+                            Portfolio
+                        </a></li>
+                    <li><a href="about.html" class="flex-child-header secondary-button">About</a></li>
+
+                    <li><a href="#contact" class="flex-child-header secondary-button">Contact</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- This is for each page's unique content. -->
+        <section class="red-background">
+            <div class="inner-wrapper">
+                <div class="row flex-gap-sm">
+                    <div class="flex-item text-wrap bordered one-half">
+                        <h1 class="Aikon_Title">Ai&#45;kon Advertisements</h1>
+                        <h2>Objectives</h2>
+                        <p>Create a series of unified advertisements for a local event.</p>
+                        <!-- <h2>Target Audience</h2>
+                        <p>Younger LGBTQ+ individuals and families.
+                        </p> -->
+                        <h2>Problem</h2>
+                        <p>All of the advertisements are in different orientations and sizes. The challenge is creating
+                            elements that work well regardless of size while making sure no two advertisements look the
+                            same.
+                        </p>
+                        <h2>How I Solved it</h2>
+                        <p>Dynamic dance poses create visual movement. Consistent
+                            patterns and colour palette create a sense of unity across the advertisements.
+                        </p>
+                    </div>
+
+                    <div class="flex-item bordered one-half">
+                        <img srcset="images/Aikon-portfolio-hero@2x.jpg 2x, images/Aikon-portfolio-hero.jpg"
+                            src="images/Aikon-portfolio-hero.jpg"
+                            alt="Pink Poster with a silhouette of a girl dancing. It's on a window."
+                            class="project-hero">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h1 class="Portfolio_Type">Process Work</h1>
+            <div class="inner-wrapper">
+                <div class="row flex-gap-sm">
+                    <div class="flex-item bordered one-half">
+                        <img srcset="images/Aikon-Process6@2x.jpg 2x, images/Aikon-Process6.jpg"
+                            src="images/Aikon-Process6.jpg" alt="Pink Poster with a silhouette of a girl dancing.">
+                    </div>
+                    <div class="flex-item bordered one-half">
+                        <img srcset="images/Aikon-Process5@2x.jpg 2x, images/Aikon-Process5.jpg"
+                            src="images/Aikon-Process5.jpg" alt="Pink Poster with a silhouette of a girl dancing.">
+                    </div>
+                    <div class="row flex-gap-sm">
+                        <div class="flex-item bordered one-half">
+                            <img srcset="images/Aikon-Process1@2x.jpg 2x, images/Aikon-Process1.jpg"
+                                src="images/Aikon-Process1.jpg" alt="Pink Poster with a silhouette of a girl dancing.">
+                        </div>
+                        <div class="flex-item bordered one-half">
+                            <img srcset="images/Aikon-Process4@2x.jpg 2x, images/Aikon-Process4.jpg"
+                                src="images/Aikon-Process4.jpg" alt="Pink Poster with a silhouette of a girl dancing.">
+                        </div>
+
+                    </div>
+                    <div class="row flex-gap-sm">
+                        <div class="flex-item bordered one-half">
+                            <img srcset="images/Aikon-Process3@2x.jpg 2x, images/Aikon-Process3.jpg"
+                                src="images/Aikon-Process3.jpg" alt="Pink Poster with a silhouette of a girl dancing.">
+                        </div>
+                        <div class="flex-item bordered one-half">
+                            <img srcset="images/Aikon-Process2@2x.jpg 2x, images/Aikon-Process2.jpg"
+                                src="images/Aikon-Process2.jpg" alt="Pink Poster with a silhouette of a girl dancing.">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="red-background">
+            <h1 class="Portfolio_Type">Finals</h1>
+            <div class="inner-wrapper">
+                <div class="row flex-gap-sm">
+                    <div class="flex-item bordered one-half">
+                        <img srcset="images/Aikon-795-finals@2x.jpg 2x, images/Aikon-795-finals.jpg"
+                            src="images/Aikon-795-finals.jpg"
+                            alt="Pink Poster with a silhouette of a girl dancing. It's on a window.">
+                    </div>
+                    <div class="flex-item bordered one-half">
+                        <img srcset="images/Aikon-Insta1@2x.jpg 2x, images/Aikon-Insta1.jpg"
+                            src="images/Aikon-Insta1.jpg"
+                            alt="Pink Instagram post with a silhouette of a girl dancing.">
+                        <img srcset="images/Aikon-Insta2@2x.jpg 2x, images/Aikon-Insta2.jpg"
+                            src="images/Aikon-Insta2.jpg"
+                            alt="Pink Instagram post with a silhouette of a girl dancing.">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="red-background">
+            <ul class="primary-nav flex-parent-header" id="project-navigation">
+                <li><a href="portfolio-gemtree.html" class="flex-child-header secondary-button">Previous Project</a>
+                </li>
+                <li><a href="portfolio-walrus.html" class="flex-child-header secondary-button">Next Project</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer id="contact" class="inner-wrapper">
+        <!-- This is for content that repeats at the end of multiple pages. -->
+        <h1>Let&#10076;s Connect</h1>
+        <a href="mailto:sarahgugenheimer@gmail.com">
+            <h2>Email me at sarahgugenheimer@gmail.com</h2>
+        </a>
+        <div class="contactlinks">
+            <a href="https://www.instagram.com/style.by.sarah.gugenheimer/" target="_blank">
+                <img src="images/instagram.svg" alt="Instagram logo" class="socialmedia">
+            </a>
+            <a href="https://www.linkedin.com/in/sarah-gugenheimer-3620182a2?originalSubdomain=ca" target="_blank">
+                <img src="images/linkedin.svg" alt="Linkedin logo" class="socialmedia">
+            </a>
+        </div>
+        <div class="inner-wrapper">
+            <p>&copy; Sarah Gugenheimer 2025</p>
+        </div>
+    </footer>
+</body>
+
+</html>

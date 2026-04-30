@@ -1,0 +1,219 @@
+/* --------------FLEXBOX------------------ */
+/* Use this stylesheet for layout styling. Edit as needed to match your own design. */
+
+/* -------Flexbox parent classes------- */
+
+.inner-wrapper {
+	/* We're setting every inner-wrapper to be a flexbox parent, but setting the default flex-direction to column, so that it's still a vertical stacked layout unless we add a .row inside it, and/or use child classes on the children. */
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	margin: 0 auto;
+}
+
+.row {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+	flex-wrap: wrap;
+}
+
+.row.full-width {
+	justify-content: flex-start;
+}
+.main-header,
+.projectsnav {
+	display: flex;
+	/*Makes this elements direct children bump beside each other by ddefauult*/
+	justify-content: space-between;
+	/*Pushes the flex children as far right and left as they can go inside their container*/
+	align-items: center;
+	/*Aligns elements vertically to the center of the parent*/
+	padding-bottom: 50px;
+}
+
+.primary-nav {
+	display: inline;
+	list-style: none;
+}
+
+.primary-nav li {
+	display: inline;
+	margin-top: 20px;
+}
+
+.primary-nav a {
+	padding: 0.75em;
+	/*Allows users to click the link without having to click directly on the text*/
+	display: inline-block;
+}
+
+.logo {
+	width: 50px;
+	min-width: 100px;
+	margin-top: -20px;
+}
+/* To implement these optional column gaps, apply one of these classes to any flex parent. */
+.flex-gap-sm {
+	gap: 10px;
+}
+.flex-gap-md {
+	gap: 20px;
+}
+.flex-gap-lg {
+	gap: 40px;
+}
+
+.centre-vertical-row {
+	align-items: center;
+}
+
+#project-navigation {
+	display: flex;
+	/*Makes this elements direct children bump beside each other by ddefauult*/
+	justify-content: space-between;
+	/*Pushes the flex children as far right and left as they can go inside their container*/
+	align-items: center;
+}
+
+.project-hero {
+	margin-bottom: 20px;
+}
+.full-width-image {
+	max-width: 100%;
+}
+/* -------Flexbox child classes------- */
+
+.flex-item {
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+}
+
+/* Remember that elements can be both a flex child and a flex parent. This class can be added onto any flex child, creating it as a flex parent and allowing you to centre content vertically and horizontally. */
+.centre-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* //////////----Responsive layout - Media queries--------////////// */
+/* You can edit the rules inside of these media queries, but you can also edit the breakpoints. */
+
+@media (max-width: 600px) {
+	/* anything you only want applied at mobile sizes can go here */
+}
+
+@media (min-width: 768px) {
+	/* anything you want to kick in at small tablet and above can go here */
+}
+
+@media (min-width: 900px) {
+	/* anything you want to kick in at large tablet and above can go here */
+
+	/* -------Flexbox child classes, to control the column widths at various breakpoints------- */
+	/* To use in your HTML, add the class "flex-item", PLUS the desired width class, like "one-third" for example to any flex child element. Example: <div class="flex-item one-third">content</div> */
+
+	/* Thirds */
+	.flex-item.one-third {
+		width: 33.33%;
+		flex-grow: unset;
+	}
+
+	.flex-item.two-thirds {
+		flex-grow: unset;
+		width: 66.67%;
+	}
+
+	.flex-gap-sm .flex-item.one-third {
+		width: calc(33.33% - 6.67px);
+	}
+
+	.flex-gap-sm .flex-item.two-thirds {
+		width: calc(66.67% - 3.33px);
+	}
+
+	.flex-gap-md .flex-item.one-third {
+		width: calc(33.33% - 13.34px);
+	}
+
+	.flex-gap-md .flex-item.two-thirds {
+		width: calc(66.67% - 6.66px);
+	}
+
+	.flex-gap-lg .flex-item.one-third {
+		width: calc(33.33% - 26.67px);
+	}
+
+	.flex-gap-lg .flex-item.two-thirds {
+		width: calc(66.67% - 13.33px);
+	}
+
+	/* Quarters */
+	.flex-item.one-quarter {
+		flex-grow: unset;
+		width: 25%;
+	}
+
+	.flex-item.three-quarters {
+		flex-grow: unset;
+		width: 75%;
+	}
+
+	.flex-gap-sm .flex-item.one-quarter {
+		width: calc(25% - 7.5px);
+	}
+
+	.flex-gap-sm .flex-item.three-quarters {
+		width: calc(75% - 3.5px);
+	}
+
+	.flex-gap-md .flex-item.one-quarter {
+		width: calc(25% - 15px);
+	}
+
+	.flex-gap-md .flex-item.three-quarters {
+		width: calc(75% - 5px);
+	}
+
+	.flex-gap-lg .flex-item.one-quarter {
+		width: calc(25% - 30px);
+	}
+
+	.flex-gap-lg .flex-item.three-quarters {
+		width: calc(75% - 10px);
+	}
+
+	/* Half widths */
+	.flex-item.one-half {
+		flex-grow: unset;
+		width: 50%;
+		padding-top: 1em;
+		margin: auto;
+	}
+
+	.flex-gap-sm .flex-item.one-half {
+		width: calc(50% - 5px);
+	}
+
+	.flex-gap-md .flex-item.one-half {
+		width: calc(50% - 10px);
+	}
+
+	.flex-gap-lg .flex-item.one-half {
+		width: calc(50% - 20px);
+	}
+}
+
+@media (min-width: 1300px) {
+	/* anything you want to kick in at desktop and above can go here */
+	.inner-wrapper {
+		max-width: 1600px;
+		/* this max-width is entirely optional, and can be edited to your fit your design. Check how your design will look on large screens by pressing CMMD- in your browser, and decide if and how you want to constrain the overall content width. */
+	}
+	.Aikon_Title {
+		margin-left: -60px;
+	}
+}

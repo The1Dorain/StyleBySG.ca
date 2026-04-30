@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+
+You can duplicate or do a "save as" with this file to start each of your main website pages, and use the example-layouts.html file for code snippets and reference. You can start one project page with this, and then duplicate that page for the rest of your project pages.
+The homepage html file of every website should always be named index.html.
+
+-->
+
+<head>
+    <title>Sarah&#10076;s Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 
+              In order to keep our CSS as manageable as possible, we're starting with multiple separate stylesheets. They are all imported into style.css.
+
+              Do not edit reset.css at all.
+              You can minimally edit layout.css to match your specific column/row grid rules. Try to keep all basic structural rules here.
+              Optionally, you can set colour variables in variables.css.
+              Use typography.css stylesheet to set your general text styles.
+              Use style.css for all general UI styles, or anything that you want to overwrite from other stylesheets, because it's loaded last.
+          -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Spline+Sans:wght@300..700&display=swap"
+        rel="stylesheet">
+    <!-- Place font links here -->
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!-- This is for content that repeats at the beginning of multiple pages. -->
+        <div class="main-header">
+            <a href="index.html"> <img alt="White SSG logo that looks like a crown." src="images/ssglogowhite.svg"
+                    class="ssg_logo">
+            </a>
+            <nav>
+                <ul class="primary-nav flex-parent-header">
+
+                    <li><a href="index.html#portfolio" class="flex-child-header secondary-button">
+                            Portfolio
+                        </a></li>
+
+                    <li><a href="about.html" class="flex-child-header secondary-button">About</a></li>
+
+                    <li><a href="#contact" class="flex-child-header secondary-button">Contact</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- This is for each page's unique content. -->
+        <section class="red-background">
+            <div class="inner-wrapper">
+                <div class="row flex-gap-sm">
+                    <div class="flex-item text-wrap bordered one-half">
+                        <h1 class="Aikon_Title">Little Bean Annual Report</h1>
+                        <h2>Objectives</h2>
+                        <p>Design an annual report for Little Bean Coffee Co with original imagery.</p>
+                        <h2>Use of Medium</h2>
+                        <p>This report was hand–cut and glued. After being made in InDesign, it was exported as two
+                            PDFs; one web–accesible and one print–ready.
+
+                        </p>
+                    </div>
+
+
+                    <div class="flex-item bordered one-half">
+                        <img srcset="images/Littlebean-portfolio-hero@2x.jpg 2x, images/Littlebean-portfolio-hero.jpg"
+                            src="images/Littlebean-portfolio-hero.jpg" alt="Book cover with two coffee cups on it."
+                            class="project-hero">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h1 class="Portfolio_Type">Process Work</h1>
+            <div class="inner-wrapper">
+                <div class="row flex-gap-sm">
+                    <div class="flex-item bordered one-half">
+                        <img srcset="images/Littlebean-Process1@2x.jpg 2x, images/Littlebean-Process1.jpg"
+                            src="images/Littlebean-Process1.jpg" alt="Coffee in a cup with a lot of bubbles on top.">
+                    </div>
+                    <div class="flex-item bordered one-half">
+                        <img srcset="images/Littlebean-Process2@2x.jpg 2x, images/Littlebean-Process2.jpg"
+                            src="images/Littlebean-Process2.jpg" alt="Two cups full of coffee next to each other.">
+                    </div>
+
+                </div>
+                <div class="row flex-gap-sm">
+                    <div class="flex-item bordered one-half">
+                        <img srcset="images/Littlebean-Process3@2x.jpg 2x, images/Littlebean-Process3.jpg"
+                            src="images/Littlebean-Process3.jpg" alt="Cream being poured into a coffee cup.">
+                    </div>
+                    <div class="flex-item bordered one-half">
+                        <img srcset="images/Littlebean-Process4@2x.jpg 2x, images/Littlebean-Process4.jpg"
+                            src="images/Littlebean-Process4.jpg" alt="Coffee being poured into a cup.">
+                    </div>
+
+                </div>
+                <div class="row flex-gap-sm">
+                    <div class="flex-item bordered one-half">
+                        <img srcset="images/Littlebean-Process5@2x.jpg 2x, images/Littlebean-Process5.jpg"
+                            src="images/Littlebean-Process5.jpg" alt="Cream being poured into a coffee cup.">
+                    </div>
+                    <div class="flex-item bordered one-half">
+                        <img srcset="images/Littlebean-Process6@2x.jpg 2x, images/Littlebean-Process6.jpg"
+                            src="images/Littlebean-Process6.jpg" alt="Cream being poured into a coffee cup.">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="red-background">
+            <h1 class="Portfolio_Type">Finals</h1>
+            <div class="inner-wrapper">
+                <img srcset="images/Littlebean-fullwidth@2x.jpg 2x, images/Littlebean-fullwidth.jpg"
+                    src="images/Littlebean-fullwidth.jpg"
+                    alt="Open book with a photo of coffee and some written text inside." class="full-width-image">
+
+            </div>
+        </section>
+        <section class="red-background">
+            <ul class="primary-nav flex-parent-header" id="project-navigation">
+                <li><a href="portfolio-ritueldefille.html" class="flex-child-header secondary-button">Previous
+                        Project</a>
+                </li>
+                <li><a href="portfolio-gemtree.html" class="flex-child-header secondary-button">Next Project</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer id="contact" class="inner-wrapper">
+        <!-- This is for content that repeats at the end of multiple pages. -->
+        <h1>Let&#10076;s Connect</h1>
+        <a href="mailto:sarahgugenheimer@gmail.com">
+            <h2>Email me at sarahgugenheimer@gmail.com</h2>
+        </a>
+        <div class="contactlinks">
+            <a href="https://www.instagram.com/style.by.sarah.gugenheimer/" target="_blank">
+                <img src="images/instagram.svg" alt="Instagram logo" class="socialmedia">
+            </a>
+            <a href="https://www.linkedin.com/in/sarah-gugenheimer-3620182a2?originalSubdomain=ca" target="_blank">
+                <img src="images/linkedin.svg" alt="Linkedin logo" class="socialmedia">
+            </a>
+        </div>
+        <div class="inner-wrapper">
+            <p>&copy; Sarah Gugenheimer 2025</p>
+        </div>
+    </footer>
+</body>
+
+</html>

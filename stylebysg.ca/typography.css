@@ -1,0 +1,324 @@
+/* -----------Typography styles--------- */
+/* Some base typography rules have already been declared in reset.css. Never edit reset.css - overwrite here as needed. */
+
+/* Begin with rules for mobile. Use the media queries at the bottom of the page to adjust any rule for larger screens. */
+
+.spline-sans-Spline-Sans {
+	font-family: "Spline Sans", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+.philosopher-regular {
+	font-family: "Philosopher", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.philosopher-bold {
+	font-family: "Philosopher", serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.philosopher-regular-italic {
+	font-family: "Philosopher", serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.philosopher-bold-italic {
+	font-family: "Philosopher", serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+/* -----Set the base size here----- */
+html {
+	font-size: 16px;
+}
+
+/* -----Set the body copy font rules, and fallback rules for all text ----- */
+body {
+	font-family: "Spline Sans", Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	line-height: 1.5;
+}
+
+/* ---------Copy & Lists--------- */
+/* Paragraph styles, including margins. Consider limiting the line lengths with a maximum width. */
+p {
+	margin-top: 20px;
+	max-width: 500px;
+}
+
+/* List styles */
+ul,
+ol {
+	color: #ffffff;
+}
+
+/* nested list styles */
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+}
+
+/* List item styles */
+li {
+	margin-top: 10px;
+}
+
+/* --------Headings------- */
+
+/* Change heading typefaces, margins, letter spacing and general line heights here */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 30px;
+	font-family: "Philosopher", "Times New Roman", Times, serif;
+	margin-left: 20px;
+}
+
+/* Change font size and more specific rules as needed per heading type */
+h1 {
+	font-size: 60px;
+}
+h2 {
+	font-size: 40px;
+}
+h3 {
+	font-size: 20px;
+	font-family: "Spline", Arial, Helvetica, sans-serif;
+	margin-top: -10px;
+}
+h4 {
+}
+h5 {
+}
+h6 {
+}
+
+/* ---------Links----------- */
+
+/* -----Text links----- */
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+.Portfolio_Type {
+	margin-left: 60px;
+}
+
+/*a:visited {
+}*/
+
+/* Hover states only work when using a mouse; focus states also work for keyboard focus */
+a:hover,
+a:focus {
+}
+
+/* Active states will work on click, on "Enter" (with keyboard), and on tap */
+a:active {
+}
+
+/* -----Buttons------- */
+/* rules that both buttons share, like padding, corner shape, font size, line height, text decoration (underline or not) */
+.primary-button,
+.secondary-button {
+}
+
+/* rules that both buttons share for their hover state  */
+.primary-button:hover,
+.secondary-button:hover,
+.primary-button:focus,
+.secondary-button:focus {
+}
+
+/* rules that both buttons share for their active state  */
+.primary-button:active,
+.secondary-button:active {
+}
+
+/* rules that are unique to primary-button */
+.primary-button {
+}
+.primary-button:visited {
+}
+.primary-button:hover,
+.primary-button:focus {
+	filter: opacity(70%);
+	transition: 300ms ease-in-out;
+}
+.primary-button:active {
+	filter: opacity(40%);
+	transition: 300ms ease-in-out;
+}
+
+/* rules that are unique to secondary-button */
+.secondary-button {
+	color: #ffffff;
+	text-decoration: none;
+	transition: all 100ms linear;
+	-webkit-transition: all 100ms linear;
+	-moz-transition: all 100ms linear;
+	-ms-transition: all 100ms linear;
+	-o-transition: all 100ms linear;
+}
+.secondary-button:visited {
+}
+.secondary-button:hover,
+.secondary-button:focus {
+	/* text-decoration: underline;
+	transition: all 300ms ease-in-out; */
+
+	/* border-bottom: solid #d9d9d9;
+	width: 100px;
+	height: 25px;
+	background-color: transparent;
+	z-index: 1;
+	padding-bottom: 20px; */
+	color: #ffffff;
+	transition: all 100ms linear;
+	-webkit-transition: all 100ms linear;
+	-moz-transition: all 100ms linear;
+	-ms-transition: all 100ms linear;
+	-o-transition: all 100ms linear;
+}
+.secondary-button:active {
+	/* background-color: #ffffff;
+	transition: all 300ms ease-in-out; */
+
+	/* width: 100px;
+	height: 25px;
+	color: white;
+	background-color: #d9d9d9;
+	z-index: 1;
+	transition: vertical 300ms ease-in-out;
+	margin-top: 10px;
+	padding-top: 20px; */
+	color: #2b0011;
+}
+
+li {
+	background-size: 200% 200%;
+	background-image: linear-gradient(to top, #ffffff 10%, transparent 10%);
+	-webkit-transition: background-position 300ms, color 300ms ease,
+		border-color 300ms ease;
+	-moz-transition: background-position 300ms, color 300ms ease,
+		border-color 300ms ease;
+	-ms-transition: background-position 300ms, color 300ms ease,
+		border-color 300ms ease;
+	-o-transition: background-position 300ms, color 300ms ease,
+		border-color 300ms ease;
+	transition: background-position 300ms, color 300ms ease,
+		border-color 300ms ease;
+}
+
+li:hover {
+	color: #430000;
+	background-image: linear-gradient(to top, #ffffff 10%, transparent 10%);
+	/*Code I got from online and I don't know how to fix. I tried removing the phare "linear-gradient" and it just gave me "parse error"*/
+	background-position: 0 100%;
+	-webkit-transition: background-position 300ms, color 300ms ease,
+		border-color 300ms ease;
+	-moz-transition: background-position 300ms, color 300ms ease,
+		border-color 300ms ease;
+	-ms-transition: background-position 300ms, color 300ms ease,
+		border-color 300ms ease;
+	-o-transition: background-position 300ms, color 300ms ease,
+		border-color 300ms ease;
+	transition: background-position 300ms, color 300ms ease,
+		border-color 300ms ease;
+}
+
+li:active {
+	color: #430000;
+	background-image: linear-gradient(to top, #ffffff 200%, transparent 200%);
+	background-position: 0 100%;
+	-webkit-transition: background-position 800ms, color 800ms ease,
+		border-color 800ms ease;
+	-moz-transition: background-position 800ms, color 800ms ease,
+		border-color 800ms ease;
+	-ms-transition: background-position 800ms, color 800ms ease,
+		border-color 800ms ease;
+	-o-transition: background-position 800ms, color 800ms ease,
+		border-color 800ms ease;
+	transition: background-position 800ms, color 800ms ease,
+		border-color 800ms ease;
+}
+
+/* --------Special classes------- */
+/* Edit these and/or create classes as needed to give yourself layout options. */
+
+/* Leading paragraph text */
+.lead {
+	font-size: 1.3em;
+}
+
+/* Used to separate a group of text elements from neighbouring images, or other groups of text. Optionally, create large-text-wrap, small-text-wrap classes for a variety of options. */
+.text-wrap {
+	padding: 1em;
+}
+
+/* Additional class to add to elements to remove top margin */
+.flush-top {
+	margin-top: 0;
+}
+.no-margin {
+	margin-bottom: 0;
+}
+.text-centred {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.text-right {
+	text-align: right;
+}
+
+/*  -------Media queries----------- */
+/* Adjust any rules for larger screen sizes. Text-wrap is used here as an example - edit or delete as needed. */
+
+@media (min-width: 768px) {
+	.text-wrap {
+		padding: 2em;
+	}
+	body {
+		font-size: 17px;
+	}
+	.hero_text {
+		margin-top: 275px;
+		padding-bottom: 30px;
+	}
+}
+
+@media (min-width: 900px) {
+	.text-wrap {
+		padding: 3em;
+	}
+	body {
+		font-size: 18px;
+	}
+	.hero_text {
+		margin-top: 175px;
+		padding-bottom: 0px;
+	}
+}
+
+@media (min-width: 1300px) {
+	.text-wrap {
+		padding: 4em;
+	}
+	body {
+		font-size: 20px;
+	}
+	.hero_text {
+		margin-top: 525px;
+		padding-bottom: 40px;
+	}
+}
